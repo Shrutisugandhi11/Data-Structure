@@ -24,6 +24,11 @@ public class RecursionProblem1 {
 
         printNumber1toN(N,++num);
     }
+
+    /**
+     * prints linear numbers from N to 1
+     * @param N
+     */
     public static void printNumberNto1(int N) {
     if(N==0)
         return;

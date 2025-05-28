@@ -7,7 +7,10 @@ package org.data.structure.recursion.backtracking;
  * print(x);
  * */
 public class BacktrackProblems {
-    //1. Printing 1 to N using backtack
+    /**
+     * 1. Printing 1 to N using backtack
+     */
+
     public static void print1toN(int N){
         if(N<1){
             return;
@@ -16,6 +19,12 @@ public class BacktrackProblems {
         System.out.println(N);
 
     }
+
+    /**
+     * Printing N to 1
+     * @param N
+     * @param num
+     */
     public static void printNto1(int N,int num){
         if(num>N){
             return;
