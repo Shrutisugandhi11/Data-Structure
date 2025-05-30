@@ -2,9 +2,9 @@ package org.data.structure.recursion.basics;
 
 public class RecursionProblem3 {
     /**
-     * 1.reverse a array using recursion
+     * 1.reverse an array using recursion
      */
-    public static void reverseArray(int arr[], int start, int end) {
+    public static void reverseArray(int [] arr, int start, int end) {
         if (start <= end) {
             int temp = arr[start];
             arr[start] = arr[end];
@@ -24,7 +24,7 @@ public class RecursionProblem3 {
     }
 
     /**
-     * 3.Fibonacii series
+     * 3.Fibonacci series
      */
     public static int fibonaciiSeries(int N){
         if (N<=1) return N;
