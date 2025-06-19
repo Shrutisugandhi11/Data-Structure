@@ -7,7 +7,7 @@ public class CountFrequencyElement {
     public static void main(String[] args) {
 
         int[] arr = {1, 2, 3, 4, 5, 1, 1, 2, 3, 4, 5, 0};
-
+        //use an array for storing frequency
         int[] frequency = new int[arr.length];
         //use map to avoid duplicate values
         Map<Integer, Integer> frequencyMap = new HashMap<>();
