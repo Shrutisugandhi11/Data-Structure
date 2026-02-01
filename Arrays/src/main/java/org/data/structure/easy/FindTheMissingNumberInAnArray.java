@@ -15,6 +15,16 @@ public class FindTheMissingNumberInAnArray {
         }
         return len;
     }
+    private static int missingNumberII(int[] nums){
+        int len=nums.length;
+        int actualSum=(len*(len+1))/2;
+        int sum=0;
+
+        for (int ele:nums)
+            sum+=ele;
+
+            return actualSum-sum;
+    }
 
     public static void main(String[] args) {
         int[] nums = {3, 0, 1};

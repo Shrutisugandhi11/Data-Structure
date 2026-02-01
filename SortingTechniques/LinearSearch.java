@@ -1,3 +1,5 @@
+package SortingTechniques;
+
 public class LinearSearch {
     public static int search(int[] num,int ele){
         for (int i = 0; i < num.length; i++) {
