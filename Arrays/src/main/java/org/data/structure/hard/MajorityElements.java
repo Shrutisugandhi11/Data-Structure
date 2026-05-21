@@ -13,19 +13,15 @@ public class MajorityElements {
         HashMap<Integer, Integer> majorityMap = new HashMap<>();
         List<Integer> majorityList = new ArrayList<>();
 
-        int size= elements.length;
-        int occurencce = size/ 3 +1;
+        int size = elements.length;
+        int occurencce = size / 3 + 1;
 
 
-        for (int i = 0; i < elements.length; i++) {
-            majorityMap.put(elements[i], majorityMap.getOrDefault(elements[i], 0) + 1);
-        }
+        for (int element : elements) {
+            majorityMap.put(element, majorityMap.getOrDefault(element, 0) + 1);
 
-
-        for (Map.Entry<Integer, Integer> entry : majorityMap.entrySet()) {
-            if (entry.getValue() >= occurencce) {
-                majorityList.add(entry.getKey());
-            }
+            if (majorityMap.get(element) == occurencce)
+                majorityList.add(element);
         }
 
 
