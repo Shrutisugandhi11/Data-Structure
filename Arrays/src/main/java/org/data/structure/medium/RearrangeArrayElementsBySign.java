@@ -61,5 +61,12 @@ public class RearrangeArrayElementsBySign {
         System.out.println(
                 Arrays.toString(res)
         );
+
+//        int eff = 10;
+//        eff+=1;
+//        Runnable r = () -> {
+//
+//            System.out.println(eff);
+//        };
     }
 }

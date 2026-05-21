@@ -22,6 +22,7 @@ public class SingleOccurrenceNumber {
         int integer = hashMap.entrySet().stream()
                 .filter(integerIntegerEntry -> integerIntegerEntry.getValue() < 2)
                 .map(entry -> entry.getKey()).findAny().get();
+
         return integer;
     }
 

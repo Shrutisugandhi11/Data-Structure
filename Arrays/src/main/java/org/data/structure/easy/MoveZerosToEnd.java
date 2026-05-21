@@ -1,6 +1,7 @@
 package org.data.structure.easy;
 
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 
 import static java.util.Collections.swap;
 
@@ -25,6 +26,7 @@ public class MoveZerosToEnd {
     }
 
     public static void swap(int[] num, int start, int end) {
+
         int temp = num[start];
         num[start] = num[end];
         num[end] = temp;
